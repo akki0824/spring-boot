@@ -19,7 +19,7 @@ pipeline {
     }
     stage('Build and Test') {
       steps {
-        withMaven(maven : 'maven'){
+        // withMaven(maven : 'maven'){
         sh 'ls -ltr'
         // build the project and create a JAR file
         sh 'mvn clean install'
