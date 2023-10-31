@@ -21,7 +21,7 @@ pipeline {
       steps {
         // sh 'ls -ltr'
         // sh 'mvn clean install'
-        // withMaven(maven : 'maven')
+        withMaven(maven : 'maven')
         {
         sh 'ls -ltr'
         // build the project and create a JAR file
